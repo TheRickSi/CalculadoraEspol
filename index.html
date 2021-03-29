@@ -12,22 +12,25 @@
     <div>
         <h1>Calculadora de Deudas</h1>
         <p><center>El calculo viene a ser el siguiente:<br> Valor a pagar = $20 + [<i>A</i>(valor por crédito según ISE) + $7 x <i>G</i> (% que depende del historial de reprobación hasta el termino inmediato anterior)] x Nro. créditos 2da vez)</center></p>
-        <p><b>Este cálculo es una referencia a cuanto se debería pagar si se reprueba una materia</b></p>
+        <p><b>Este cálculo es una referencia a cuanto se debería pagar si reprueba una materia</b></p>
     </div>
     <form action="">
         <fieldset>
             <legend>Ingresa los siguientes datos:</legend>
-             <label for = "varA">Ingrese su Categoria ISE:</label>
-             <input type = "number"><br><hr>
-             <label for="varG"">Ingrese la cantidad de materias reprobadas dentro de su historial académico:</label>
-             <input type = "number"><br><hr> 
+             <label for = "varA" >Ingrese su Categoria ISE:</label>
+             <input type = "number" id = "varA"><br><hr>
+             <label for="varG">Ingrese la cantidad de materias reprobadas dentro de su historial académico:</label>
+             <input type = "number" id = "varG"><br><hr> 
              <label for="varC">Ingrese la cantidad de créditos por segunda vez:</label>
-             <input type = "number"><br><hr>     
-             <button type = "submit" value="Submit">Enviar Datos:</button>
+             <input type = "number" id = "varC"><br><hr>     
+             <button type = "button" onclick="Resultado()">Enviar Datos</button>
         </fieldset>
-        <h2 id = "resultado"> El valor a pagar es el siguiente: </h2>
+        <h2 id = "resultado"></h2>
     </form>
     <img src = "imagenReferencia.jpg">
+
+    <script src = "js/script.js">
+    </script>
 </body>
 
 </html>
